@@ -363,6 +363,7 @@ struct CurrentGlucoseView: View {
     }
 
     private func glucoseColor(for glucoseValue: Int16) -> Color {
+        return Color.primary
         // TODO: workaround for now: set low value to 55, to have dynamic color shades between 55 and user-set low (approx. 70); same for high glucose
         let hardCodedLow = Decimal(55)
         let hardCodedHigh = Decimal(220)
